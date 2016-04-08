@@ -25,7 +25,7 @@ public class PacModel {
 	public float pacx=5, pacy=6;
 	
 	public final static int still=0, left =1, right =2, up=3, down =4;
-	public int pacdirection=right;
+	public int pacdirection = right;
 	public int time=0;
 	
 	private ArrayList<ArrayList<Character>> board = new ArrayList<ArrayList<Character>>();
@@ -59,8 +59,7 @@ public class PacModel {
 	public void changeworld()
 	{
 		time+=1;
-		if(pacdirection==left)
-		{
+		if(pacdirection==left){
 			pacx-=.1;
 		}
 		else if(pacdirection == right)

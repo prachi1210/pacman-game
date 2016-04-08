@@ -18,7 +18,7 @@ public class PacView extends Canvas{
 		setSize(world.getWidth()*t,world.getHeight()*t);
 	}
 	
-	public void updategraphics(Graphics g)
+	public void update(Graphics g)
 	{
 		Image im = new BufferedImage(getWidth(), getHeight(), BufferedImage.TYPE_INT_RGB);
 		paint(im.getGraphics());
@@ -38,8 +38,7 @@ public class PacView extends Canvas{
 				switch(c)
 				{
 					case '.': 
-						if((world.time/5)%2==0)
-							g.drawOval(x*t+t/3, y*t+t/3, t/3, t/3); 
+						g.drawOval(x*t+t/3, y*t+t/3, t/3, t/3); 
 						break;
 					case '#': g.fillRect(x*t, y*t, t, t);break;
 					case 'o': g.drawOval(x*t+1, y*t+1, t-1, t-1);break;
