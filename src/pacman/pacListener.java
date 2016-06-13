@@ -3,14 +3,14 @@ package pacman;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class pacListener implements KeyListener {
+public class PacListener implements KeyListener {
 	
 	PacModel world;
-	public pacListener(PacModel world) {
+	public PacListener(PacModel world) {
 		this.world=world;
 	}
 
-	@Override
+	//@Override
 	public void keyPressed(KeyEvent ke) {
 		int code= ke.getKeyCode();
 		if(code==KeyEvent.VK_LEFT){
@@ -27,9 +27,9 @@ public class pacListener implements KeyListener {
 		}
 	}
 
-	@Override
+	//@Override
 	public void keyReleased(KeyEvent arg0) {}
 
-	@Override
+	//@Override
 	public void keyTyped(KeyEvent arg0) {}
 }
