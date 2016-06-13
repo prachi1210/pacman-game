@@ -21,7 +21,7 @@ public class Main {
 		app.pack();
 		app.setVisible(true);
 		
-		screen.addKeyListener(new pacListener(world));
+		screen.addKeyListener(new PacListener(world));
 		
 		while(!world.endgame())
 		{
